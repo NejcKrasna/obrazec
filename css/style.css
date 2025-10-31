@@ -1,0 +1,287 @@
+*{
+	margin:0;
+	padding:0;
+	transition: 0.5s;
+}
+:root{
+	--main-color:white;
+	--secondary-color:black;
+	--tretja-color:white;
+	--cetrta-color:#cecece;
+}
+a{
+	text-decoration:none;
+}
+p{
+	color:var(--secondary-color);
+}
+
+body{
+	background:var(--main-color);
+}
+main{
+	display: flex;
+	width: 100%;
+	height: 90vh;
+}
+
+
+.gumb{
+	margin:10px 0;
+	width: 300px;
+	height: 40px;
+	border-radius: 20px;
+	background:white;
+	color: black;
+	text-align:center;
+	line-height:40px;
+    font-family: sans-serif;
+	border: 1px solid var(--secondary-color);
+}
+.gumb:hover {
+	opacity: 0.6;
+	transition:0.2s;
+}
+.crta{
+	width: 130px;
+	height: 0px;
+	padding:5px;
+	border-bottom: 1px solid var(--secondary-color);
+}
+.or{
+	width: 40px;
+	height: 10px;
+	color: var(--secondary-color);
+	text-align:center;
+    font-family: sans-serif;
+}
+.leftside{
+	width: 50%;
+	height:100%;
+	display: flex;
+	align-items: center;
+}
+.rightside{
+	width: 50%;
+	height:100%;
+}
+.foot-ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    max-width: 80%;
+    margin: 10px auto;
+}
+.xLogo{
+	margin: 0 auto;
+	display: block;
+}
+.naslov4 {
+	margin: 20px 50px;
+}
+.naslov4 p{
+	font-size: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.naslov5 {
+	margin: 20px 50px 10px 50px;
+}
+.naslov5 p{
+	font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.naslov6 {
+	margin: 5px 50px;
+}
+.naslov6 p{
+	color:#71767b;
+	font-size: 10px;
+    font-family: sans-serif;
+}
+.naslov7 {
+	margin: 5px 50px;
+}
+.naslov7 p{
+	color:#71767b;
+	font-size: 10px;
+    font-family: sans-serif;
+}
+
+#hiddnlogo{
+	display:none;
+}
+#naslov1{
+	width:500px;
+	margin: 50px 0 0 0;
+}
+#naslov2{
+	margin: 20px 0 0 0;
+}
+#naslov3{
+	margin: 20px 0 0 0;
+}
+#naslov1 p{
+	font-size: 60px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+#naslov2 p{
+	font-size: 35px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+#naslov3 p{
+	font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+#or{
+	margin-bottom: 15px;
+	display: flex;
+	width: 300px;
+}
+#create{
+	background: var(--secondary-color);
+	color:var(--main-color);
+}
+
+#signin, #iamgrok{
+	font-weight: bold;
+	background: var(--main-color);
+	color:var(--secondary-color);
+}
+#policy{
+	font-size: 10px;
+	width: 300px;
+	color:#71767b;
+}
+#policy a{
+	color:#1d9bf0;
+}
+#foot{
+	position: absolute;
+	bottom:0px;
+    margin-top: auto;
+	height: 10vh;
+    width: 100%;
+    text-align: center;
+}
+#foot a,li{
+	color:#71767b;
+}
+#naslov2,#signup,#login{
+		width:300px;
+}
+#black_overlay {
+  display: none;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 1001;
+  opacity: .80;
+}
+#signup_overlay1, #signup_overlay2{
+  display: none;
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  width: 50%;
+  height: 500px;
+  background-color: var(--tretja-color);
+  z-index: 1002;
+  border-radius: 50px;
+}
+#close_signup2,#close_signup1{
+	color:var(--secondary-color);
+	font-family: sans-serif;
+	position:absolute;
+	top:25px;
+	left:25px;
+}
+#xLogo_signup,#xLogo_signup2{
+	margin: 5px auto;
+}
+#signup_name,#signup_email,#signup_username,#signup_password1,#signup_password2{
+	margin: 20px 50px;
+}
+#signup_password1{
+	margin-bottom:0;
+}
+#signup_date{
+	margin: 20px 50px 10px;
+}
+#name, #email, #username, #password1, #password2{
+	background: var(--main-color);
+	border: 1px solid var(--cetrta-color);
+	color: var(--secondary-color);
+	width: 95%;
+	height: 30px;
+	outline: none;
+	padding: 10px;
+	transition: 0.5s;
+}
+#date{
+	background: var(--main-color);
+	border: 1px solid var(--cetrta-color);
+	color: var(--secondary-color);
+	height: 30px;
+	outline: none;
+	padding: 10px;
+	transition: 0.5s;
+}
+#name:focus,#email:focus,#date:focus,#username:focus,#password1:focus,#password2:focus{
+	border: 1px solid #0089ff;
+}
+#tosign2,#tofin{
+	margin: 40px auto
+}
+#tosign2 p,#tofin p{
+	color: var(--primary-color);
+}
+
+@media screen and (max-width: 1300px) {
+	
+.leftside{
+	display: none;
+}
+.rightside{
+	margin:0 auto;
+}
+#desnu_glavnu{
+	display:flex;
+	justify-content: center;
+}
+#foot{
+	display:none
+}
+#hiddnlogo{
+	display:block;
+	margin-top: 10px;
+}
+#naslov1{
+	margin-top:10px;
+}
+#desna_glavnu div{
+	margin-inline:auto;
+}
+}
+@media (prefers-color-scheme: dark) {
+	:root{
+		--main-color:black;
+		--secondary-color:white;
+		--tretja-color:#1c1c1c;
+		--cetrta-color:white;
+	}
+    .xLogo{
+		filter: invert(100%);
+	}
+}
