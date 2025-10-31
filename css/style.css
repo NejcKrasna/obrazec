@@ -117,7 +117,6 @@ main{
 	display:none;
 }
 #naslov1{
-	width:500px;
 	margin: 50px 0 0 0;
 }
 #naslov2{
@@ -175,7 +174,7 @@ main{
 #foot a,li{
 	color:#71767b;
 }
-#naslov2,#signup,#login{
+#naslov1,#naslov2,#signup,#login{
 		width:300px;
 }
 #black_overlay {
