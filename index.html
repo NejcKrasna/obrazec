@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -26,10 +26,21 @@
 		<div id="signup_password1"><input type="password" id="password1" placeholder="Password"></div>
 		<div class="naslov7"><p>Password must have at least: 1 lowercase letter, 1 uppercase letter, 1 number and 8 characters</p></div>
 		<div id="signup_password2"><input type="password" id="password2" placeholder="Re-enter password"></div>
-		<div id="tofin" class="gumb"><p>Next</p></div>
+		<div id="tofin" class="gumb"><p>Finish</p></div>
 	</form>
 </div>
-<div id="sigin_overlay"></div>
+<div id="signin_overlay">
+	<form action="#" name="signin_form">
+		<div id="close_signin">X</div>
+		<div id="xLogo_signin"><img class="xLogo" src="images/x.svg" width="50px" height="50px"></div>
+		<div class="naslov4"><p>Log in to X</p></div>
+		<div id="signin_username"><input type="text" id="inusername" placeholder="Username"></div>
+		<div id="signin_password"><input type="password" id="inpassword" placeholder="Password"></div>
+		<div id="signin_remember"><input type="checkbox" id="remember"><label for="remember"> Remember me</label></div>
+		<div id="login_gumb" class="gumb"><p>Log in</p></div>
+		<div id="forpas" class="gumb"><p>Forgot password?</p></div>
+	</form>
+</div>
 <main>
 <div class="leftside">
 	<img class="xLogo" src="images/x.svg">
@@ -44,8 +55,8 @@
 			<p>Join today</p>
 		</div>
 		<div id="signup">
-			<div id="google" class="gumb"> Sign up with Google</div>
-			<div id="apple" class="gumb"> Sign up with Apple</div>
+			<div id="google" class="gumb"><img src="images/google.svg" height="20px" width="20px"> Sign up with Google</div>
+			<div id="apple" class="gumb"><img src="images/apple.svg" height="20px" width="20px"> Sign up with Apple</div>
 			<div id="or">
 				<div class="crta"></div><div class="or">OR</div><div class="crta"></div>
 			</div>
@@ -55,7 +66,7 @@
 		<div id="login">
 			<div id="naslov3"><p>Already have an account?</p></div>
 			<div id="signin" class="gumb">Sign in</div>
-			<div id="iamgrok" class="gumb">Get the app</div>
+			<div id="iamgrok" class="gumb"><img class="invert" src="images/x.svg" height="20px" width="20px">Get the app</div>
 		</div>
 	</div>
 </div>

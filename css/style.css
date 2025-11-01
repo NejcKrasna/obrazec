@@ -24,7 +24,12 @@ main{
 	width: 100%;
 	height: 90vh;
 }
-
+html,body{
+	height:100%;
+}
+a:hover{
+	text-decoration:underline;
+}
 
 .gumb{
 	margin:10px 0;
@@ -37,6 +42,7 @@ main{
 	line-height:40px;
     font-family: sans-serif;
 	border: 1px solid var(--secondary-color);
+	cursor: pointer;
 }
 .gumb:hover {
 	opacity: 0.6;
@@ -113,6 +119,15 @@ main{
     font-family: sans-serif;
 }
 
+
+#google,#apple,#iamgrok{
+	position:relative;
+}
+#google img,#apple img,#iamgrok img{
+	position:absolute;
+	left: 10px;
+	top: 10px;
+}
 #hiddnlogo{
 	display:none;
 }
@@ -150,13 +165,13 @@ main{
 	color:var(--main-color);
 }
 
-#signin, #iamgrok{
+#signin, #iamgrok, #forpas{
 	font-weight: bold;
 	background: var(--main-color);
 	color:var(--secondary-color);
 }
 #policy{
-	font-size: 10px;
+	font-size: 12px;
 	width: 300px;
 	color:#71767b;
 }
@@ -175,7 +190,7 @@ main{
 	color:#71767b;
 }
 #naslov1,#naslov2,#signup,#login{
-		width:300px;
+	width:300px;
 }
 #black_overlay {
   display: none;
@@ -188,7 +203,7 @@ main{
   z-index: 1001;
   opacity: .80;
 }
-#signup_overlay1, #signup_overlay2{
+#signup_overlay1, #signup_overlay2, #signin_overlay{
   display: none;
   position: absolute;
   top: 10%;
@@ -199,18 +214,26 @@ main{
   z-index: 1002;
   border-radius: 50px;
 }
-#close_signup2,#close_signup1{
+#close_signup2,#close_signup1,#close_signin{
 	color:var(--secondary-color);
 	font-family: sans-serif;
 	position:absolute;
 	top:25px;
 	left:25px;
+	cursor: pointer;
 }
-#xLogo_signup,#xLogo_signup2{
+#xLogo_signup,#xLogo_signup2,#xLogo_signin{
 	margin: 5px auto;
 }
-#signup_name,#signup_email,#signup_username,#signup_password1,#signup_password2{
+#signup_name,#signup_email,#signup_username,#signup_password1,#signup_password2,#signin_username,#signin_password{
 	margin: 20px 50px;
+}
+#signin_remember{
+	margin: 0 50px;
+	color: var(--secondary-color);
+}
+#login_gumb,#forpas{
+	margin: 20px auto;
 }
 #signup_password1{
 	margin-bottom:0;
@@ -218,7 +241,7 @@ main{
 #signup_date{
 	margin: 20px 50px 10px;
 }
-#name, #email, #username, #password1, #password2{
+#name, #email, #username, #password1, #password2, #inusername, #inpassword{
 	background: var(--main-color);
 	border: 1px solid var(--cetrta-color);
 	color: var(--secondary-color);
@@ -243,7 +266,7 @@ main{
 #tosign2,#tofin{
 	margin: 40px auto
 }
-#tosign2 p,#tofin p{
+#tosign2 p,#tofin p,#login_gumb p{
 	color: var(--primary-color);
 }
 
@@ -253,9 +276,11 @@ main{
 	display: none;
 }
 .rightside{
+	width:100%;
 	margin:0 auto;
 }
 #desnu_glavnu{
+	width: 300px;
 	display:flex;
 	justify-content: center;
 }
@@ -273,6 +298,22 @@ main{
 	margin-inline:auto;
 }
 }
+@media screen and (max-width: 800px) {
+#signup_overlay1, #signup_overlay2, #signin_overlay{
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	min-height: 600px;
+	width: 100%;
+	height: 100%;
+	background-color: var(--tretja-color);
+	z-index: 1002;
+	border-radius: 0px;
+}
+#black_overlay {
+  opacity: 1;
+}
+}
 @media (prefers-color-scheme: dark) {
 	:root{
 		--main-color:black;
@@ -281,6 +322,9 @@ main{
 		--cetrta-color:white;
 	}
     .xLogo{
+		filter: invert(100%);
+	}
+	.invert{
 		filter: invert(100%);
 	}
 }
