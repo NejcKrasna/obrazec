@@ -31,6 +31,10 @@ a:hover{
 	text-decoration:underline;
 }
 
+
+.nounderline{
+	text-decoration:none !important;
+}
 .gumb{
 	margin:10px 0;
 	width: 300px;
