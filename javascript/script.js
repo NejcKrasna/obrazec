@@ -146,7 +146,7 @@ function tofinish(){
 	if(naprej=="gre"){
 		Swal.fire({
 		icon: "success",
-		title: "Bravooo",
+		title: "Sign up complete!",
 		theme: 'auto'
 		});
 		signup_div2.style.display = "none";
@@ -158,7 +158,7 @@ function login(){
 	if(document.forms["signin_form"]["inusername"].value=="admin" && document.forms["signin_form"]["inpassword"].value=="admin"){
 		Swal.fire({
 		icon: "success",
-		title: "Dobrodošli!",
+		title: "Welcome!",
 		theme: 'auto'
 		});
 		signin_div.style.display = "none";
