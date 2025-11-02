@@ -27,14 +27,8 @@ main{
 html,body{
 	height:100%;
 }
-a:hover{
-	text-decoration:underline;
-}
 
 
-.nounderline{
-	text-decoration:none !important;
-}
 .gumb{
 	margin:10px 0;
 	width: 300px;
@@ -101,12 +95,12 @@ a:hover{
 .naslov5 {
 	margin: 20px 50px 10px 50px;
 }
-.naslov5 p{
+.naslov5 p,.naslov3 p{
 	font-size: 20px;
     font-family: sans-serif;
     font-weight: bold;
 }
-.naslov6 {
+.naslov6,.naslov7 {
 	margin: 5px 50px;
 }
 .naslov6 p{
@@ -114,15 +108,30 @@ a:hover{
 	font-size: 10px;
     font-family: sans-serif;
 }
-.naslov7 {
-	margin: 5px 50px;
-}
 .naslov7 p{
 	color:#71767b;
 	font-size: 10px;
     font-family: sans-serif;
 }
-
+.naslov1{
+	margin: 50px 0 0 0;
+}
+.naslov2,.naslov3{
+	margin: 20px 0 0 0;
+}
+.naslov1 p{
+	font-size: 60px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.naslov2 p{
+	font-size: 35px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.rem{
+    font-family: sans-serif;
+}
 
 #google,#apple,#iamgrok{
 	position:relative;
@@ -134,30 +143,6 @@ a:hover{
 }
 #hiddnlogo{
 	display:none;
-}
-#naslov1{
-	margin: 50px 0 0 0;
-}
-#naslov2{
-	margin: 20px 0 0 0;
-}
-#naslov3{
-	margin: 20px 0 0 0;
-}
-#naslov1 p{
-	font-size: 60px;
-    font-family: sans-serif;
-    font-weight: bold;
-}
-#naslov2 p{
-	font-size: 35px;
-    font-family: sans-serif;
-    font-weight: bold;
-}
-#naslov3 p{
-	font-size: 20px;
-    font-family: sans-serif;
-    font-weight: bold;
 }
 #or{
 	margin-bottom: 15px;
@@ -190,10 +175,10 @@ a:hover{
     width: 100%;
     text-align: center;
 }
-#foot a,li{
+#foot a,#foot li{
 	color:#71767b;
 }
-#naslov1,#naslov2,#signup,#login{
+.naslov1,.naslov2,#signup,#login{
 	width:300px;
 }
 #black_overlay {
@@ -273,6 +258,10 @@ a:hover{
 #tosign2 p,#tofin p,#login_gumb p{
 	color: var(--primary-color);
 }
+#policy a:hover,#foot a:hover{
+	text-decoration:underline
+}
+
 
 @media screen and (max-width: 1300px) {
 	
@@ -282,6 +271,9 @@ a:hover{
 .rightside{
 	width:100%;
 	margin:0 auto;
+}
+.naslov1{
+	margin-top:10px;
 }
 #desnu_glavnu{
 	width: 300px;
@@ -295,23 +287,23 @@ a:hover{
 	display:block;
 	margin-top: 10px;
 }
-#naslov1{
-	margin-top:10px;
-}
 #desna_glavnu div{
 	margin-inline:auto;
 }
 #signup_overlay1, #signup_overlay2, #signin_overlay{
-position: absolute;
-top: 0%;
-left: 0%;
-min-height: 600px;
-width: 100%;
-height: 100%;
-background-color: var(--tretja-color);
-z-index: 1002;
-border-radius: 0px;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	min-height: 600px;
+	width: 100%;
+	height: 100%;
+	background-color: var(--tretja-color);
+	z-index: 1002;
+	border-radius: 0px;
 }
+}
+@media screen and (max-width: 800px) {
+
 }
 @media (prefers-color-scheme: dark) {
 	:root{
@@ -327,4 +319,3 @@ border-radius: 0px;
 		filter: invert(100%);
 	}
 }
-
