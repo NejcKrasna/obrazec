@@ -198,7 +198,7 @@ html,body{
   top: 10%;
   left: 25%;
   width: 50%;
-  height: 500px;
+  height: 525px;
   background-color: var(--tretja-color);
   z-index: 1002;
   border-radius: 50px;
@@ -212,7 +212,7 @@ html,body{
 	cursor: pointer;
 }
 #xLogo_signup,#xLogo_signup2,#xLogo_signin{
-	margin: 5px auto;
+	margin: 25px auto;
 }
 #signup_name,#signup_email,#signup_username,#signup_password1,#signup_password2,#signin_username,#signin_password{
 	margin: 20px 50px;
@@ -322,4 +322,5 @@ html,body{
 		color-scheme: dark;
 	}
 }
+
 
