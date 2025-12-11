@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="380" height="380">
-  <polygon xmlns="http://www.w3.org/2000/svg" points="2,0 122,0 106,31 60,31 274,348 321,348 106,31 122,0 210,130  320,0 368,0 231,161 378,378 258,378 165,241 48,378 0,378 144,209"/>
+  <polygon fill="currentcolor" xmlns="http://www.w3.org/2000/svg" points="2,0 122,0 106,31 60,31 274,348 321,348 106,31 122,0 210,130  320,0 368,0 231,161 378,378 258,378 165,241 48,378 0,378 144,209"/>
 </svg>
+
 
